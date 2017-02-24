@@ -16,6 +16,10 @@ export default {
   methods: {
     showNotification: function () {
       console.log('TODO')
+      if (Notification.permission === 'granted') {
+        var notification = new Notification('Hi there!')
+        notification
+      }
     }
   },
   created () {
